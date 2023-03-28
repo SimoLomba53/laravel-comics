@@ -12,6 +12,7 @@
     </header>
     <main>
      @include('jumbotron')
+     @include('moredetails')
     </main>
     <footer>
 
