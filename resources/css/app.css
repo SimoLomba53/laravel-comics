@@ -1,3 +1,7 @@
 .jumbo {
     max-height: 300px;
 }
+
+.cardcont {
+    max-width: 20px;
+}
