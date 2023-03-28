@@ -9,7 +9,7 @@
     @vite('resources/js/app.js')
 </head>
 <body>
-<nav class="navbar navbar-expand-lg bg-light">
+<nav class="navbar navbar-expand-lg bg-light d-flex justify-content-between">
   <div class="container-fluid">
     <div>
     <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="">
@@ -55,10 +55,12 @@
           </ul>
         </li>
       </ul>
+      <div>
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success" type="submit">Search</button>
       </form>
+      </div>
     </div>
   </div>
 </nav>
