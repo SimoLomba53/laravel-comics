@@ -19,9 +19,11 @@ Route::get('/', function () {
     return view('homepage',compact('cards'));
 })->name('homepage');
 
-Route::get('cards', function () {
-    $cards= config('comics');
+Route::get('/card/{price}/{description}/{index}', function ($price,$description,$index) {
+    $cards=config('comics');
 
-    return view('cards',compact('cards'));
-})->name('cards');
+    echo $index;
+
+    return view('detail');
+})->name('card-detail');
 

@@ -7,17 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-     @include('header')
-    </header>
-    <main>
-     @include('jumbotron')
-     @include('cards')
-     @include('moredetails')
-     
-    </main>
-    <footer>
-
-    </footer>
+    <?php echo $card['description'] ?>
 </body>
 </html>

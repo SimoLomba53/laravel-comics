@@ -14,6 +14,11 @@
             <div class="cardcont w-25 d-flex align-items-center justify-content-center flex-column ">
                 <img src="{{ $card["thumb"] }}" alt="">
                 <p class="fs-6 text-white">{{ $card["title"] }}</p>
+                <a href="{{ route('card-detail',[
+                   'price' => $card['price'] ,
+                   'description' =>$card['description'],
+                   'index' => $loop->index,
+                ]) }}">GO TO DETAIL</a>
             </div>
         @endforeach
     </div>
